@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+button {
+    outline: none;
+    border: none;
+}
+
+body {
+    font-family: Roboto, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    background-color: #000;
+    color: #FFF;
+}
+
+.filters {
+    margin: .625rem;
+}
+
+.filters .filter-item {
+    font-family: 'Press Start 2P', cursive;
+    padding: .3125rem;
+    color: #FFF;
+    background: none;
+    border: .125rem solid #FFF;
+    margin: .5rem;
+}
+
+.filters .filter-item:hover {
+    color: crimson;
+    border-color: crimson;
+    transition: all .6s;
+    cursor: pointer;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2.5rem 0;
+    width: 100%;
+    height: 2.5rem;
+}
+
+.search-box input {
+    height: 2.25rem;
+    border: none;
+    border-radius: .25rem;
+    border-color: #666;
+    margin: .3125rem;
+    padding: .5rem .8rem;
+    outline: none;
+}
+
+.search-box button {
+    background: crimson;
+    color: #FFF;
+    border-radius: .25rem;
+    padding: .5rem .8rem;
+    height: 2.25rem;
+}
+
+.search-box button:hover {
+    opacity: .5;
+    transition: all .6s;
+}
+
+.container {
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media screen and (min-width: 960px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+.card {
+    max-width: 16rem;
+    background: #fff;
+    margin: .5rem;
+}
+
+.card-image {
+    max-width: 100%;
+}
+
+.card-title {
+    padding: .6rem;
+    color: #333;
+}
