@@ -9,7 +9,9 @@
 
             let cat = document.querySelector('#cat');
             cat.addEventListener('mouseover', (e) => {
-                    e.target.style.display = 'none'
+                    e.target.style.display = 'none';
+                    console.log('kill smelly cat')
+                    console.log('press smellyCat() to continue: ');
             });
 
             setTimeout(function(){ 
@@ -136,3 +138,7 @@
     app.init();
     
 })();
+
+var smellyCat = () => {
+    document.querySelector('#cat').style.display = 'block';
+}
