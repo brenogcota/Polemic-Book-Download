@@ -18,6 +18,57 @@ body {
     color: #FFF;
 }
 
+#cat {
+    position: absolute;
+    z-index: 2;
+    max-width: 6.25rem;
+    cursor: pointer;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: smellyCat;
+}
+
+#cat.down {
+    margin-left: 1.25rem;
+    animation-name: smellyCatDown;
+}
+
+#cat.up {
+    margin-left: 90%;
+    animation-name: smellyCatUp;
+}
+
+@keyframes smellyCat {
+    from {
+      margin-left: -100%;
+    }
+  
+    to {
+      margin-left: 90%;
+    }
+}
+
+@keyframes smellyCatDown {
+    from {
+      margin-top: -100%;
+    }
+  
+    to {
+      margin-top: 90%;
+    }
+}
+
+@keyframes smellyCatUp {
+    from {
+      margin-top: 100%;
+    }
+  
+    to {
+      margin-top: -100%;
+    }
+}
+
 .filters {
     margin: .625rem;
 }
@@ -51,7 +102,7 @@ body {
     height: 2.25rem;
     border: none;
     border-radius: .25rem;
-    border-color: #666;
+    border: .125rem solid crimson;
     margin: .3125rem;
     padding: .5rem .8rem;
     outline: none;

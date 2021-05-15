@@ -7,6 +7,23 @@
             console.log("%c App starter ✔", "background: #dc143c; color: #fff; padding: 0.75%;");
             console.log('https://github.com/brenogcota');
 
+            let cat = document.querySelector('#cat');
+            cat.addEventListener('mouseover', (e) => {
+                    e.target.style.display = 'none'
+            });
+
+            setTimeout(function(){ 
+                cat.classList = 'down';
+            }, 8000);
+
+            setTimeout(function(){ 
+                cat.classList = 'up';
+            }, 12000);
+
+            setTimeout(function(){ 
+                cat.classList = '';
+            }, 18000);
+
             const data = await localStorage.getItem('data');
             if(data) {
                 this.render(JSON.parse(data));
